@@ -1,0 +1,57 @@
+h1 {
+  color: green;
+}
+body {
+  background-color: pink;
+}
+.main-wrapper {
+  width: 700px;
+  background-color: blue;
+  height: 400px;
+  border: 3px solid red;
+  padding: 30px 40px 30px 40px;
+  margin: 20px 30px 20px 30px;
+}
+.main-heading {
+  background-color: #0c1b33;
+  color: #dbfe87;
+  /* display: inline; */
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secondary-heading {
+  background-color: #03b5aa;
+  color: #dbfe87;
+  height: 200px;
+  /* display: inline; */
+  border: 2px solid purple;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.main-btn {
+  background-color: peru;
+  padding: 5px 15px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.bold-styles {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+#portflio-header {
+  color: red;
+}
+/* !important => inline => id =>  class => tag style =>imported tag in css file */
