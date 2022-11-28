@@ -1,0 +1,55 @@
+
+.card{
+	background-color: beige;
+	text-align: center;
+	padding: 10px 40px;
+	border: 1px solid black;
+	/* margin: 40px; */
+	/* margin-top: -100px; */
+	/* width: 330px; */
+	box-sizing: border-box;
+	height: auto;
+	overflow: auto;
+	margin: 0 auto;
+	width: 50vw;
+	height: 50vh;
+	/* width: 100%;
+	max-width: 200px;
+	max-height: 350px;
+	min-width: 200px; */
+}
+
+.card button{
+	padding: 10px 30px;
+	font-size: 16px;
+	font-weight: 500;
+	background-color: coral;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+.card span{
+	color: red;
+}
+
+.card1{
+	display:inline-block;
+	background-color: beige;
+	text-align: center;
+	padding: 10px 40px;
+	border: 1px solid black;
+	margin: 10px;
+	width: 250px;
+	box-sizing: content-box;
+}
+.card1 button{
+	padding: 10px 30px;
+	font-size: 16px;
+	font-weight: 500;
+	background-color: coral;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+
+/* main{
+	display: flex;
+} */
