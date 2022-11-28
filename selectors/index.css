@@ -1,0 +1,139 @@
+.class1 {
+  background-color: blue;
+}
+.class2 {
+  background-color: pink;
+}
+
+.class3 {
+  background-color: red;
+}
+.class4 {
+  background-color: yellow;
+}
+
+/* select elements that have both of the classes / for elements that have only one of them would not wt */
+.class1.class2 {
+  font-weight: 700;
+}
+
+/* select all elements of class3 that are children of class1 */
+.class1 .class3 {
+  color: white;
+}
+
+/* select class thta is immediately after class1 */
+.class1 + .class2 {
+  font-size: 30px;
+}
+
+/* sleect class that is under class1 but not required exsctly under. can be in any other position */
+.class1 ~ .class4 {
+  text-decoration: line-through;
+}
+.class1 > .class3 {
+  border: 2px solid black;
+}
+.animal {
+  font-size: 18px;
+  color: aqua;
+  font-weight: 700;
+  background-color: beige;
+  text-decoration: underline;
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+ul {
+  padding-inline-start: 0px;
+}
+.animal:first-child {
+  background-color: lightblue;
+  color: white;
+}
+.animal:last-child {
+  background-color: lightgoldenrodyellow;
+  color: black;
+}
+.animal:nth-child(3) {
+  background-color: greenyellow;
+  color: black;
+}
+.name {
+  color: blue;
+}
+
+.age {
+  color: blueviolet;
+}
+
+.button {
+  background-color: lightblue;
+  padding: 10px 20px;
+  border: 1px solid black;
+  margin-left: 30px;
+}
+
+/* наводимо на елемент */
+.button:hover {
+  background-color: darkblue;
+  color: white;
+}
+/* кнопка не працює */
+.button:disabled {
+  background-color: lightgrey;
+  color: darkgrey;
+}
+/* коли юзер клікнув  */
+.button:active {
+  background-color: yellowgreen;
+}
+/* коли юзер обрав чекбокс */
+.info:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
+/* коли юзер починає щось писати в інпуті */
+.age:focus {
+  color: red;
+}
+input:not(.age, .info) {
+  background-color: beige;
+}
+
+.pseudo_elements:visited {
+  color: green;
+}
+a:link {
+  color: red;
+}
+/* .hello::before {
+  content: "(";
+} */
+.hello::after {
+  content: ")";
+}
+.hello::first-letter {
+	color: red;
+	font-size: 20px;
+  }
+.user:hover::before {
+  content: "(=";
+}
+.user:hover::after {
+  content: " Julia !";
+}
+.content:hover{
+	background-color: purple;
+}
+.content::first-line{
+	font-weight: 700;
+	font-size: 24px;
+	color: red;
+}
+.content_span{
+	color: aqua;
+}
+.content_span:hover{
+	background-color: yellow;
+}
