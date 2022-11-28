@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: beige;
+  border: 1px dashed black;
+  text-align: center;
+  /* align-content: space-around; */
+  align-items: center;
+  height: 600px;
+  row-gap: 50px;
+}
+.card {
+  width: 200px;
+}
+/* .special {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+} */
