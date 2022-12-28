@@ -1,0 +1,13 @@
+:root {
+  --blue: #6495ed;
+  --white: #faf0e6;
+}
+
+.icon:hover {
+  fill: purple;
+  stroke: yellowgreen;
+}
+.icon-container {
+  width: 80px;
+  height: 80px;
+}

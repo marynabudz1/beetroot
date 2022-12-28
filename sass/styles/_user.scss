@@ -1,0 +1,18 @@
+.user {
+	width: 10000 / 20 + px;
+	background-color: yellow;
+	&__name {
+	  font-size: $font18 + px;
+	  color: $red-color;
+	}
+	&__age {
+	  font-size: em(16);
+	//   @include theme(pink);
+	  color: $green-color;
+	}
+	&__city {
+	  font-size: $font14 + px;
+	  color: $pink-color;
+	}
+  }
+  

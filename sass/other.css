@@ -1,0 +1,11 @@
+:root{
+	--dark-grey: red;
+	--yellow: yellow;
+}
+
+.bye{
+	color: var(--dark-grey)
+}
+.hello{
+	color: var(--yellow)
+}
