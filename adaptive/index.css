@@ -1,0 +1,72 @@
+.description {
+  color: pink;
+}
+@media (max-width: 1024px) {
+  .description {
+    color: red;
+  }
+}
+@media (max-width: 920px) {
+  .description {
+    color: purple;
+  }
+}
+@media (max-width: 768px) {
+  .description {
+    color: greenyellow;
+  }
+}
+@media (max-width: 320px) {
+  .description {
+    color: blue;
+  }
+}
+
+.description-mobile {
+  color: greenyellow;
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  .description-mobile {
+    color: pink;
+  }
+}
+
+.desktop-menu {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.menu {
+  background-color: lightgrey;
+  border: 1px solid black;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  row-gap: 20px;
+  padding: 20px;
+  display: none;
+}
+
+#main-container {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+/*# sourceMappingURL=index.css.map */

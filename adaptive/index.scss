@@ -1,0 +1,86 @@
+$bp-mobile: 320px;
+$bp-tablet: 768px;
+$bp-desktop: 1440px;
+
+.description {
+  color: pink;
+  // max-width -> максимальна ширина (всіх девайсів які мають максильну ширину 768)
+  // <= 768px greenyellow
+  // > 768px pink
+  //   desktop development first
+
+  // 1024px
+  @media (max-width: 1024px) {
+    color: red;
+  }
+
+  @media (max-width: 920px) {
+    color: purple;
+  }
+
+  @media (max-width: $bp-tablet) {
+    color: greenyellow;
+  }
+  @media (max-width: $bp-mobile) {
+    color: blue;
+  }
+}
+
+.description-mobile {
+  color: greenyellow;
+  // max-width -> максимальна ширина (всіх девайсів які мають максильну ширину 768)
+  // <= 768px greenyellow
+  // > 768px pink
+  //   mobile development first
+  @media (min-width: 768px) and (orientation: landscape) {
+    color: pink;
+  }
+}
+// usually take from design but those one are the most popular
+// @media screen and (max-width: 768px){
+// 	.header{
+
+// 	}
+// }
+
+.desktop-menu {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+
+  @media (max-width: $bp-tablet) {
+    display: none;
+  }
+}
+.mobile-menu {
+  display: none;
+  @media (max-width: $bp-tablet) {
+    display: block;
+  }
+}
+
+.menu {
+  background-color: lightgrey;
+  border: 1px solid black;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  row-gap: 20px;
+  padding: 20px;
+  display: none;
+}
+
+#main-container {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+$breakpoints: (
+  "small": 320px,
+  "phone": 480px,
+  "tablet": 768px,
+  "desktop": 1024px,
+  "screen": 1400px,
+  "large": 1920px,
+);

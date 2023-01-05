@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Adaptive</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <h1 class="description">Hello</h1>
+
+      <div class="desktop-menu">
+        <span>Home</span>
+        <span>about</span>
+        <span>works</span>
+        <span>blog</span>
+        <span>contact</span>
+      </div>
+
+      <div class="mobile-menu">
+        <a
+          href="javascript:void(0);"
+          id="burger-icon"
+          class="icon"
+          onclick="myFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <a href="javascript:void(0);" class="icon" onclick="themeChange()">
+          <i class="fas fa-comment"></i>
+        </a>
+        <div class="menu" id="menu">
+          <span>Home</span>
+          <span>about</span>
+          <span>works</span>
+          <span>blog</span>
+          <span>contact</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+      function themeChange() {
+        var x = document.getElementById("main-container");
+        if (x.style.backgroundColor === "rgb(22, 29, 49)") {
+          x.style.backgroundColor = "white";
+        } else {
+          x.style.backgroundColor = "rgb(22, 29, 49)";
+        }
+      }
+    </script>
+  </body>
+</html>

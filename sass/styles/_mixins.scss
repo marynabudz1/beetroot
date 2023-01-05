@@ -4,14 +4,20 @@
   color: #fff;
 }
 
+@mixin blackTheme() {
+  background: black;
+  box-shadow: 0 0 1px rgba(black, 0.25);
+  color: #fff;
+}
+
 @mixin size($big: null) {
- @if($big){
-	width: 400px;
-	height: 400px;
- } @else{
-	width: 200px;
-	height: 200px;
- }
+  @if ($big) {
+    width: 400px;
+    height: 400px;
+  } @else {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @mixin bigSize() {
@@ -19,22 +25,23 @@
   height: 400px;
 }
 
-@mixin flex($direction: row, $wrap: null) {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: $direction;
-	@if $wrap {
-		flex-wrap: wrap;
-	} @else{
-		flex-wrap: nowrap;
-	}
-	// @if $sizeSmall {
-	// 	width: 100%;
-	// 	padding: 0px;
-	// 	margin: 0px;
-	// } @else{
-	// 	width: 80%;
-	// 	padding: 20px;
-	// 	margin: 0 auto;
-	// }
+@mixin flex($direction: row, $wrap: wrap) {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: $direction;
+  wrap: $wrap
+//   @if $wrap {
+//     flex-wrap: wrap;
+//   } @else {
+//     flex-wrap: nowrap;
+//   }
+  // @if $sizeSmall {
+  // 	width: 100%;
+  // 	padding: 0px;
+  // 	margin: 0px;
+  // } @else{
+  // 	width: 80%;
+  // 	padding: 20px;
+  // 	margin: 0 auto;
+  // }
 }
